@@ -6,7 +6,7 @@ export default function* processBigLoop() {
             console.log('loop #', i);
             let total = 0;
             for (let k = 1; k <= ADD_UP_TO; k += 1) {
-                total = yield k + total;
+                total = k + total;
             }
             console.log(i, '-', total);
         }
